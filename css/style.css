@@ -1,0 +1,330 @@
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.home , .a , .model {
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 50px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+/* start nav responsive */
+.navbar{
+    position: absolute;
+    top: 0;
+    right: -17px;
+    background-color: rgb(78, 78, 78);
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    text-align: center;
+    display: none;
+    z-index: 150;
+}
+.navbar .dd {
+    content: "\f00d";
+    color: aqua;
+    font-size: 42px;
+    position: absolute;
+    top: 15px;
+    right: 23px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    cursor: pointer;
+}
+.dd:hover{
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+.navbar .logo-res{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+  .list-res ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: aliceblue;
+    margin-top: 20px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.list-res ul li a:hover{
+    color: aqua;
+}
+li{
+    margin-top: 20px;
+}
+.list-res ul li{
+    border-bottom: 1px solid rgb(151, 151, 151);
+    padding: 10px;
+    padding-bottom: 30px;
+}
+/* end nav responsive */
+/* start navbar */
+.container-fluid {
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 35px;
+  position: fixed;
+  z-index: 100;
+}
+ul{
+    list-style: none;
+}
+.container-fluid ul {
+  display: flex;
+  margin-top: 17px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container-fluid .menu-icon{
+    font-size: 30px;
+    color: aqua;
+    display: none;
+}
+.container-fluid .list a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.container-fluid .fisrt-a {
+  color: aqua;
+}
+.container-fluid .logo {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  color: gainsboro;
+}
+.container-fluid .logo span {
+  color: aqua;
+}
+.container-fluid .list a:hover {
+  color: aqua;
+}
+/* end navbar */
+/* Home */
+.home {
+  background-image: url(../image/img-one.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ text-align: center;
+ width: 100%;
+ height: 100vh;
+ overflow: hidden;
+ 
+}
+.home .info{
+    color: aqua;
+    padding-top: 150px;
+}
+.home .info p{
+    font-size: 20px;
+    color: white;
+} 
+/* Servces */
+.a h1,
+.container h1
+{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 50px;
+    font-weight: bold;
+}
+.model .container h1,
+.cars .container h1,
+.team .container h1
+{
+  color: black;
+}
+.inffo{
+  width: 300px;
+  height: 150px;
+  background-color: rgb(212, 212, 212);
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.inffo:hover{
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.a{
+  background-image: url(../image/a.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ width: 100%;
+ height: 100vh;
+  
+}
+.Servces{
+  margin-top: 35px;
+}
+.one  , .two , .three , .four {
+  cursor: pointer;
+}
+.Servces .one h2{
+  padding-top: 30px;
+}
+.Servces .two h3 {
+  padding: 15px;
+  font-size: 26px;
+}
+.Servces .three h3,
+.Servces .four h3
+{
+  padding: 20px;
+}
+.s{
+  margin-left: 200px;
+}
+/* start model */
+.model .row , .team .row{
+  margin-top: 35px;
+}
+.model .row img{
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  cursor: pointer;
+  width: 184px;
+  height: 132px;
+}
+.model .row img:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+/* end model */
+/* start cars */
+.cars .container a{
+  color: blue;
+}
+.cars .slide{
+  margin-top: 35px;
+}
+/* end cars */
+/* start footer */
+.text-lg-start {
+  text-align: left!important;
+  padding: 1px;
+}
+.f a{
+  text-decoration: none;
+}
+/* end footer */
+/* media */
+@media (max-width:1115px){
+.Servces  .s{
+  margin-left: 147px;
+}
+}
+@media (max-width:991px){
+.Servces .s{
+  margin-left: 182px;
+}
+.Servces .cell{
+  margin-bottom: 15px;
+}
+}
+@media (max-width:767px){
+.Servces .s{
+  margin-left: 96px;
+}
+.model .row img{
+  margin-bottom: 25px;
+}
+}
+@media (max-width:510px){
+.Servces .s{
+  margin-left: 47px;
+}
+}
+@media (max-width:410px){
+  .Servces .s{
+    margin-left: 18px;
+  }
+  .navbar .dd{
+    font-size: 28px;
+  }
+}
+@media (max-width:317px){
+  .container-fluid .logo {
+    font-size: 20px;
+}
+}
+@media (max-width:284px){
+  .Servces .s{
+    margin-left: -33px;
+  }
+}
+@media (max-width:759px){
+    .ss{
+        height: 70px;
+    }
+.list{
+    display: none;
+}
+.logo{
+    font-size: 25px;
+}
+.container-fluid .menu-icon{
+    display: block;
+    cursor: pointer;
+}
+}
+@media (max-width:420px){
+    .home .info h1{
+        font-size: 20px;
+    }
+    .home .info p {
+        font-size: 15px;
+    }
+}
